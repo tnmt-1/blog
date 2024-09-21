@@ -10,7 +10,7 @@ iso_date=$(date +"%Y-%m-%dT%H:%M:%S%z")
 iso_date="${iso_date:0:22}:${iso_date:22:24}"
 
 # ファイル名を指定されたフォーマットで作成
-file_name="docs/blog/posts/${current_date}.md"
+file_name="docs/posts/${current_date}.md"
 
 # Markdownファイルを作成し、Front Matterを追加
 cat <<EOT > $file_name
